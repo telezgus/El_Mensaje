@@ -1,0 +1,345 @@
+* {
+     
+    box-sizing: border-box;
+}
+
+html, body{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    margin: 0;
+    background-color: yellow;
+    font-family: 'Spartan', sans-serif;
+    
+  
+}
+
+.botonmenu{
+    display: none;
+}
+
+.header{
+    background-color: aquamarine;
+    display: flex  ;
+    flex-wrap: nowrap;
+    height:100%;
+    margin:0;
+    flex-direction: row;
+}
+
+    .menu{
+        background-color: rgb(18, 18, 19);
+        display:flex;
+        flex-wrap: nowrap;
+        width: 25%;
+        flex: 1 1 auto;
+        flex-direction: column;
+        align-items: center;
+        min-width: 300px;
+
+    }
+
+        .logo {
+            background-color: rgb(18, 18, 19);
+            
+            display: flex;
+            flex-wrap: nowrap;
+            flex: 5 1 auto;
+            font-size: 25px;
+            margin-top: 50px;
+            font-family: 'Wire One', sans-serif;
+            font-family: 'Spartan', sans-serif;
+            font-size: 60px;        
+            color: bisque;
+            
+            
+        }
+
+       
+        .imglogo{
+            width: 100%;
+            padding: 20px;
+            height: 45%;
+            
+        }
+
+        .imgiso{
+            display: none;
+        }
+
+        .nav {
+            background-color: rgb(18, 18, 19);
+            font-size: 18px;
+            color:  white;
+            text-decoration: none;
+            display: flex;
+            flex-wrap: nowrap;
+            flex: 4 1 auto;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -30px;
+        }
+
+        .nav a {    
+            font-size: 18px;
+            color:  white;
+            text-decoration: none;
+            font-weight:bolder;
+            
+            display: block;
+            position: relative;
+            padding: 0.2em 0;
+            
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0.03em;
+            background-color: rgb(216, 216, 216);
+            transition: opacity 300ms, transform 300ms;
+            opacity: 1;
+            transform: scale(0);
+            transform-origin: center;
+            }
+
+        .nav a:hover::after, .nav a:focus::after{
+            transform: scale(1);
+            
+
+        }
+
+
+        .social {
+            background-color: rgb(18, 18, 19);
+            display: flex;
+            flex-wrap: nowrap;
+            flex: 1 1 auto;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            
+
+        }
+
+            .direccion{
+            margin-top: -10px;
+            font-size: 18px;
+            font-family: 'EB Garamond', serif;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: .01em;
+            color: #acacac;
+            letter-spacing: .7px;
+            }
+
+            .iconos{
+                font-size: 25px;
+                color: white;
+            }
+
+    .cartelera{
+        background: url(../img/oleo1.jpeg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        flex-direction: column;
+        flex: 3 1 auto;
+        padding: 30px;
+        
+        
+    }
+
+    .exposicion {
+        
+        padding: 0px;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 60px;
+        font-weight: normal;
+        
+        
+        
+    }
+    .artista{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        align-self: flex-end;
+        font-size: 90px;
+        font-weight:lighter;
+
+        
+    }
+
+    .cartel1{
+        
+        color: bisque;
+        margin: 0px;
+        
+        margin-top: 0px;
+        margin-bottom: -10px;
+        text-align: left;
+        font-family: 'Spartan', sans-serif;
+        display: flex;
+        flex-wrap: nowrap;
+        
+        
+        
+    }
+
+    .cartel2{
+        font-size: 35px;
+        color: bisque;
+        font-weight:normal;
+        text-align: left;
+        margin-left: 5px;
+        margin-top: -5px;
+        display: flex;
+        flex-wrap: nowrap;
+        
+    }
+
+    .letrina{
+
+    }
+    
+
+@media all and (max-width:780px) {
+
+    html, body{
+        display: flex;
+        flex-direction: column;
+        
+        margin: 0;
+        background-color: rgb(18, 18, 19);
+        font-family: 'Spartan', sans-serif;
+        height:auto;
+                    
+    }
+
+    .header{
+        flex-direction: column;
+        
+        background-color: rgb(18, 18, 19);
+}
+        
+    .menu{
+        
+        width: 100%;
+        height: 15vh;
+        flex-direction: row;
+        align-items: center;
+        background-color:rgb(18, 18, 19);
+        display: flex;
+        flex-wrap: nowrap;
+        padding-right: 2vh;
+        padding-left: 2vh;
+        flex: 1 1 auto;
+        padding-top: auto;
+        padding-bottom: auto;
+    
+
+            
+        min-width: 200px;
+    
+        
+    }    
+
+    .imglogo{
+        display: none;
+        
+    }
+
+    .nav, .social{
+        display: none;
+    }
+
+    .imgiso{
+        display:inline;
+        width: 40px;
+        height: 40px;
+        margin-left: 2vh;
+        align-self: center;
+        
+    }
+
+    .logo {
+        background-color: rgb(18, 18, 19);
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 1 1 auto;
+        font-size: 25px;
+        margin-top: auto;
+        font-family: 'Wire One', sans-serif;
+        font-family: 'Spartan', sans-serif;
+        margin-top: 0px;
+        color: bisque;    
+        }
+        
+    .botonmenu{
+        display: inline;
+        margin-right: 30px;
+    }    
+
+    #offcanvasExample{
+        background-color:rgb(18, 18, 19) ;
+        color: white;
+        font-size: 15px;
+        max-width: 70%;
+    }
+
+    .btn {
+        background-color:rgb(18, 18, 19) ;
+        border-color: rgb(18, 18, 19);
+    }
+
+    .btn:hover{
+        background-color:white ;
+        border-color: white;
+        color:rgb(18, 18, 19);
+
+    }
+    .linkmenu{
+        text-decoration: none;
+        color: white;
+    }
+
+    .cartelera{
+        min-height: 400px;
+        height: 85vh;
+        justify-content: center;
+    }
+
+    .exposicion {
+    
+        font-size: 32px;        
+        
+    }
+
+    .artista{
+        
+        font-size: 64px;
+        
+
+        
+    }
+
+    
+
+    .cartel2{
+        font-size: 20px;
+        
+        
+    }
+
+
+    }
